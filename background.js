@@ -1,5 +1,5 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (tab.url.startsWith('https://playentry.org/ws')) {
+  if (tab.url.startsWith('https://fullscreen-for-googletasks.com/')) {
     if (changeInfo.status === "loading") {
       inject("theme.css", "file");
     }
